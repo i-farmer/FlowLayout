@@ -1,4 +1,4 @@
-package i.farmer.flowlayout;
+package i.farmer.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
