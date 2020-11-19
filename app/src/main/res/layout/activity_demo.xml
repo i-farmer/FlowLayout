@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:background="#D6D7DC" />
+
+    <i.farmer.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:flowGravity="right"
+        app:rowGravity="center"
+        app:spacingHorizontal="5dp"
+        app:spacingVertical="5dp">
+
+        <TextView
+            style="@style/flowItem"
+            android:text="老人与海" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="彻夜不眠" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="沉于晚林" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="又一季" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="寂寞" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="一缕墨香"
+            android:textSize="28sp" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="做事欠缺研究" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="有着美丽的容颜" />
+
+        <TextView
+            style="@style/flowItem"
+            android:text="IT民工" />
+    </i.farmer.flowlayout.FlowLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#D6D7DC" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <!--左右对齐方式-->
+        <attr name="flowGravity" format="enum">
+            <enum name="left" value="1" />
+            <enum name="center" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+        <!--行上下对齐方式-->
+        <attr name="rowGravity" format="enum">
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <!--横向间距-->
+        <attr name="spacingHorizontal" format="dimension" />
+        <!--竖向间距-->
+        <attr name="spacingVertical" format="dimension" />
+    </declare-styleable>
+</resources>
