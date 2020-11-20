@@ -5,15 +5,15 @@
 ```
 1. add it in your root build.gradle at the end of repositories:
     allprojects {
-		repositories {
-			...
-			maven { url 'https://www.jitpack.io' }
-		}
+	repositories {
+	    ...
+	    maven { url 'https://www.jitpack.io' }
 	}
+    }
 2. add the dependency
     dependencies {
-	        implementation 'com.github.i-farmer:FlowLayout:1.0.0'
-	}
+	implementation 'com.github.i-farmer:FlowLayout:1.0.0'
+    }
 3. to use
     <i.farmer.flowlayout.FlowLayout
         android:layout_width="match_parent"
