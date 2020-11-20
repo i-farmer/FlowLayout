@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * @auther i-farmer
+ * @author i-farmer
  * @created-time 2020-11-19 10:45:07
  * @description 流式布局
  * <p>

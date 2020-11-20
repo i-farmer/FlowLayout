@@ -7,7 +7,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "i.farmer.demo"
+        applicationId "i.farmer.demo.flowlayout"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

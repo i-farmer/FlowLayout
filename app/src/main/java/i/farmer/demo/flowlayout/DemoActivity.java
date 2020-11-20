@@ -1,4 +1,4 @@
-package i.farmer.demo;
+package i.farmer.demo.flowlayout;
 
 import android.os.Bundle;
 
