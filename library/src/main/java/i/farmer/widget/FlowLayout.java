@@ -137,6 +137,12 @@ public class FlowLayout extends ViewGroup {
         }
         int measuredWidth = modeWidth == MeasureSpec.EXACTLY ? sizeWidth : measureWidth + getPaddingLeft() + getPaddingRight();
         int measuredHeight = modeHeight == MeasureSpec.EXACTLY ? sizeHeight : measureHeight + getPaddingTop() + getPaddingBottom();
+        if (measuredWidth < getMinimumWidth()) {
+            measuredWidth = getMinimumWidth();
+        }
+        if (measuredHeight < getMinimumHeight()) {
+            measuredHeight = getMinimumHeight();
+        }
         setMeasuredDimension(measuredWidth, measuredHeight);
         if (measuredWidth == 0 || measuredHeight == 0) {
             // 如果计算出来的宽高为0，则隐藏，避免margin照成的空白
@@ -231,6 +237,22 @@ public class FlowLayout extends ViewGroup {
     @Override
     protected LayoutParams generateLayoutParams(LayoutParams p) {
         return new MarginLayoutParams(p);
+    }
+
+    public void setSpacingHorizontal(int spacingHorizontal) {
+        this.spacingHorizontal = spacingHorizontal;
+    }
+
+    public void setSpacingVertical(int spacingVertical) {
+        this.spacingVertical = spacingVertical;
+    }
+
+    public void setFlowGravity(int flowGravity) {
+        this.flowGravity = flowGravity;
+    }
+
+    public void setRowGravity(int rowGravity) {
+        this.rowGravity = rowGravity;
     }
 
     class Row {
